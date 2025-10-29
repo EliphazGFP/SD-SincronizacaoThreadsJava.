@@ -55,6 +55,8 @@ Consumo de CPU mínimo.
 
 
 **2. Análise Técnica**
+
+
 <img width="712" height="302" alt="image" src="https://github.com/user-attachments/assets/57597574-33e9-4946-8ae8-086cc70c7826" />
 
 **Atividade 01**
