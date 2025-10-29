@@ -85,11 +85,15 @@ Eventos wait()/notify() (Ativ. 03)→ Combina exclusão mútua com comunicação
 
 
 **3. Opinião Pessoal**
+
 A sequência das três atividades é didaticamente perfeita para entender a evolução da concorrência em Java:
 
 **Atividade 01** mostra o caos sem controle, sendo essencial para reconhecer a necessidade de sincronização.
+
 **Atividade 02** prova que synchronized resolve race conditions, mas não é suficiente sozinho em cenários de coordenação.
+
 **Atividade 03** entrega a solução ideal: segura, eficiente e escalável.
+
 
 
 **Conclusão pessoal:**
