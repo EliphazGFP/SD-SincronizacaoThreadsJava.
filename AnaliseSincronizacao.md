@@ -19,7 +19,7 @@ As duas execuções apresentaram ordens diferentes e valores inconsistentes.
 Race conditions evidentes.
 
 
-###**Atividade Prática 02 – Monitores + Busy-Wait**
+**Atividade Prática 02 – Monitores + Busy-Wait**
 
 **Pasta**: monitor
 
@@ -36,7 +36,7 @@ Busy-wait (while(!Pronto);) consome CPU enquanto espera.
 O valor lido é sempre consistente.
 
 
-###**Atividade Prática 03 – Eventos (wait() / notify())**
+**Atividade Prática 03 – Eventos (wait() / notify())**
 
 **Pasta:** eventos
 
@@ -59,12 +59,18 @@ Consumo de CPU mínimo.
 
 
 **Critério, Ativ.01, Ativ.02, Ativ. 03**
+
 **Exclusão mútua**,Não,Sim,Sim
+
 **Race conditions**,Sim,Não,Não
+
 **Integridade dos dados**,Comprometida,Garantida,Garantida
+
 **Ordem de execuçã**o,Imprevisível,Controlada,Perfeita
+
 **Uso de CPU**,Baixo,Alto (polling),Baixo
-**Escalabilidad**e,Ruim,Média,Excelente
+
+**Escalabilidade**,Ruim,Média,Excelente
 
 
 
