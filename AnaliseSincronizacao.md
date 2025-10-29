@@ -55,26 +55,23 @@ Consumo de CPU mínimo.
 
 
 **2. Análise Técnica**
-
-
-
-**Critério, Ativ.01, Ativ.02, Ativ. 03**
-
-**Exclusão mútua**,Não,Sim,Sim
-
-**Race conditions**,Sim,Não,Não
-
-**Integridade dos dados**,Comprometida,Garantida,Garantida
-
-**Ordem de execuçã**o,Imprevisível,Controlada,Perfeita
-
-**Uso de CPU**,Baixo,Alto (polling),Baixo
-
-**Escalabilidade**,Ruim,Média,Excelente
-
 <img width="712" height="302" alt="image" src="https://github.com/user-attachments/assets/57597574-33e9-4946-8ae8-086cc70c7826" />
 
+**Atividade 01**
 
+A ausência de exclusão mútua permite interleaving de instruções entre armazenar e carregar.
+Resultado: condições de corrida → valores imprevisíveis e perda de atualizações.
+
+**Atividade 02**
+
+synchronized garante exclusão mútua – apenas uma thread modifica/ lê Dado por vez.
+O uso de while(!Pronto); (busy-wait) resolve a race condition, mas gasta ciclos de CPU desnecessariamente.
+
+**Atividade 03**
+
+Combina monitores (synchronized) com comunicação (wait() / notify()).
+A flag Pronto controla a condição de espera; wait() suspende a thread, liberando o monitor; notify() acorda a thread oposta.
+Elimina busy-wait, reduzindo drasticamente o consumo de CPU e tornando a solução eficiente e escalável.
 
 **Impacto da Sincronização**
 
