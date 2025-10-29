@@ -3,9 +3,13 @@
 ## 1. Detalhes das Execuções e Saídas Observadas
 
 ### Atividade Prática 01 – **Sem Sincronização**  
+
 **Pasta:** `problema`  
-**Arquivos de log:** `problema/log1.txt` e `problema/log2.txt`  
+
+**Arquivos de log:** `problema/log1.txt` e `problema/log2.txt` 
+
 **Código principal:** `MeuDadoThreadsJava.java`  
+
 **Métodos:** `armazenar()` e `carregar()` **não** `synchronized`.
 
 **Observações:**
@@ -15,10 +19,14 @@ As duas execuções apresentaram ordens diferentes e valores inconsistentes.
 Race conditions evidentes.
 
 
-**Atividade Prática 02 – Monitores + Busy-Wait**
+###**Atividade Prática 02 – Monitores + Busy-Wait**
+
 **Pasta**: monitor
+
 **Arquivo de log:** monitor/log_monitor.txt
+
 **Código principal:** MeuDadoMonitorJava.java
+
 **Métodos:** synchronized + while(!Pronto); (polling).
 
 **Observações:**
@@ -28,10 +36,14 @@ Busy-wait (while(!Pronto);) consome CPU enquanto espera.
 O valor lido é sempre consistente.
 
 
-**Atividade Prática 03 – Eventos (wait() / notify())**
+###**Atividade Prática 03 – Eventos (wait() / notify())**
+
 **Pasta:** eventos
+
 **Arquivos de log:** eventos/log_eventos.txt e log_eventos2.txt
+
 **Código principal:** MeuDadoEventJava.java
+
 **Métodos:** synchronized + wait() / notify().
 
 **Observações:**
@@ -46,13 +58,13 @@ Consumo de CPU mínimo.
 
 
 
-Critério,Ativ. 01,Ativ. 02,Ativ. 03
-Exclusão mútua,Não,Sim,Sim
-Race conditions,Sim,Não,Não
-Integridade dos dados,Comprometida,Garantida,Garantida
-Ordem de execução,Imprevisível,Controlada,Perfeita
-Uso de CPU,Baixo,Alto (polling),Baixo
-Escalabilidade,Ruim,Média,Excelente
+**Critério, Ativ.01, Ativ.02, Ativ. 03**
+**Exclusão mútua**,Não,Sim,Sim
+**Race conditions**,Sim,Não,Não
+**Integridade dos dados**,Comprometida,Garantida,Garantida
+**Ordem de execuçã**o,Imprevisível,Controlada,Perfeita
+**Uso de CPU**,Baixo,Alto (polling),Baixo
+**Escalabilidad**e,Ruim,Média,Excelente
 
 
 
